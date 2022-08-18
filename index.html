@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container p-4">
+        <a class="navbar-brand" href="#"><img src="imgs/logo.png" alt="" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-sliders fs-3 text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live Cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- start weather display section -->
+    <section class="weather-container">
+      <div class="container">
+        <form class="position-relative my-4">
+          <input
+            id="countryInput"
+            type="text"
+            class="form-control border rounded-pill"
+          />
+          <button
+            class="btn btn-primary position-absolute rounded-pill"
+            id="searchCountry"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+        <div class="row">
+          <div class="weather-box col-md-4 position-relative">
+            <div
+              class="box-header p-2 d-flex justify-content-between align-items-center"
+            >
+              <span class="day"></span><span class="date"></span>
+            </div>
+            <h2 class="country fs-2 position-absolute"></h2>
+            <div
+              class="box-body py-5 px-3 text-center d-flex justify-content-center align-items-center"
+            >
+              <div class="box-content">
+                <span class="temprature fs-1 my-2"></span>
+                <img class="mt-2" src="imgs/logo.png" alt="" />
+                <span class="condition text-primary my-2"></span>
+              </div>
+            </div>
+          </div>
+          <div class="weather-box col-md-4">
+            <div class="box-header p-2 d-flex justify-content-between">
+              <span class="day"></span><span class="date"></span>
+            </div>
+            <div
+              class="box-body py-5 px-3 text-center d-flex justify-content-center align-items-center"
+            >
+              <div class="box-content">
+                <span class="temprature fs-1 my-2"></span>
+                <img class="mt-2" src="imgs/logo.png" alt="" />
+                <span class="condition text-primary my-2"></span>
+              </div>
+            </div>
+          </div>
+          <div class="weather-box col-md-4">
+            <div class="box-header p-2 d-flex justify-content-between">
+              <span class="day"></span><span class="date"></span>
+            </div>
+            <div
+              class="box-body py-5 px-3 text-center d-flex justify-content-center align-items-center"
+            >
+              <div class="box-content">
+                <span class="temprature fs-1 my-2"></span>
+                <img class="mt-2" src="imgs/logo.png" alt="" />
+                <span class="condition text-primary my-2"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end weather display section -->
+    <div class="footer">
+      <div class="container p-4">
+        <div class="footer-content d-flex">
+          <div class="copyright">
+            <p>copyrights @ is reserved by <span>weather app</span></p>
+          </div>
+          <div class="social-links">
+            <a class="mx-3" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="mx-3" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="mx-3" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a class="mx-3" href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
